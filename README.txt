@@ -23,3 +23,10 @@ Background music update:
 - File: engagement-theme.mp3
 - Playback begins when the visitor taps "Tap to Reveal" and loops continuously.
 - Upload engagement-theme.mp3 in the same root folder as index.html and style.css.
+
+Template-matching update:
+- Enlarged only the cover ENGAGEMENT label; original font family retained.
+- Added a detailed double-line gold temple arch to the invitation page, with the upper floral corner and lotus footer matching the supplied reference.
+- The Save the Date lotus footer was already present and is retained.
+- Replaced the closing tagline with "With warm regards, The Vyas & Sharma Families".
+- Existing photos, QR code, joined-hands image, monogram, font families and uploaded Krishna-theme song are retained.

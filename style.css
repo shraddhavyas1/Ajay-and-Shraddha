@@ -321,3 +321,87 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
   .date-page .date-temple-arch{inset:10px 12px;width:calc(100% - 24px);height:calc(100% - 20px)}
   .date-page .date-floral{width:96px;top:17px;right:16px}
 }
+
+
+/* FINAL CLOSING-PAGE FRAME FIX:
+   The temple arch is a single background frame. All closing content sits inside it. */
+.blessing-page{
+  box-sizing:border-box;
+  padding:42px 14px 28px;
+  gap:10px;
+  align-items:center;
+}
+.blessing-card{
+  box-sizing:border-box;
+  position:relative;
+  isolation:isolate;
+  width:min(100%,760px);
+  min-height:900px;
+  height:auto;
+  padding:178px clamp(48px,8vw,76px) 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:0;
+  overflow:hidden;
+  background:linear-gradient(145deg,#fff9f0 0%,#f8ecdf 100%);
+  border:0;
+  box-shadow:none;
+}
+.blessing-card:before{display:none;content:none}
+.blessing-card .blessing-temple-arch{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  z-index:0;
+  pointer-events:none;
+}
+.blessing-card > :not(.blessing-temple-arch){
+  position:relative;
+  z-index:1;
+  flex-shrink:0;
+}
+.blessing-ornament{margin:0 0 14px}
+.blessing-heading{font-size:clamp(30px,5vw,42px);line-height:1.18}
+.blessing-card .ornament{margin:14px auto 12px}
+.blessing-subtext{font-size:clamp(19px,3vw,24px)}
+.blessing-signature{margin:12px 0 12px;font-size:clamp(42px,7vw,58px)}
+.joined-hands{
+  display:block;
+  width:min(100%,520px);
+  max-height:260px;
+  height:auto;
+  object-fit:contain;
+  margin:8px auto 8px;
+  mix-blend-mode:multiply;
+}
+.blessing-lotus{
+  display:block;
+  width:calc(100% + 30px);
+  height:88px;
+  margin:0 -15px 0;
+  z-index:1;
+}
+.closing-date{margin:0;color:#9a805f;font-size:9px;letter-spacing:2.5px}
+@media(max-width:600px){
+  .blessing-page{padding:28px 10px 24px}
+  .blessing-card{
+    width:100%;
+    min-height:840px;
+    padding:170px 38px 18px;
+  }
+  .blessing-ornament{font-size:28px;margin-bottom:12px}
+  .blessing-heading{font-size:clamp(28px,7.5vw,36px)}
+  .blessing-card .ornament{margin:12px auto 10px}
+  .blessing-subtext{font-size:19px}
+  .blessing-signature{font-size:clamp(40px,10vw,50px);margin:10px 0}
+  .joined-hands{width:108%;max-height:230px;margin:8px auto}
+  .blessing-lotus{height:78px;width:calc(100% + 22px);margin-left:-11px;margin-right:-11px}
+}
+
+/* Opening-page AS monogram: enlarged by 25%, preserving its original artwork and proportions. */
+.monogram{width:clamp(181px,30vw,263px);height:clamp(206px,33.75vw,281px)}
+@media(max-width:600px){.monogram{width:185px;height:215px}}

@@ -37,3 +37,9 @@ Latest layout update:
 - Save the Date now uses the same gold temple arch and upper floral corner as the invitation page, with its lotus footer retained.
 - Removed the "The Vyas & Sharma Families" line from the closing page.
 - All other pages, original photographs, venue QR, venue details, monogram, joined-hands illustration and Krishna-theme song are retained.
+
+Latest page-size and frame update:
+- All five invitation sections use a consistent full-viewport-height page layout.
+- Pages 2 (Engagement invitation) and 3 (Save the Date) have matching full-page proportions.
+- Both pages use the same gold temple-arch outline with side borders and curved upper arch; the Save the Date page retains its floral corner and lotus footer.
+- Existing fonts, photos, music, venue QR and wording are retained.

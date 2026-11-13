@@ -237,3 +237,87 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
   .date-page .countdown span{font-size:8px}
   .date-page .scenic-lotus{height:78px}
 }
+
+
+/* Consistent full-screen page proportions across the complete invitation. */
+.page{
+  box-sizing:border-box;
+  width:100%;
+  min-height:100svh;
+}
+.cover,
+.invite-page,
+.date-page,
+.moments-page,
+.blessing-page{
+  min-height:100svh;
+  box-sizing:border-box;
+}
+
+/* Pages 2 and 3 share the same full-page gold arch proportions. */
+.invite-page,
+.date-page{
+  padding:12px 18px;
+  align-items:center;
+  justify-content:center;
+}
+.invite-card,
+.date-page .date-card{
+  box-sizing:border-box;
+  width:min(100%, 980px);
+  min-height:calc(100svh - 24px);
+  margin:0 auto;
+}
+.invite-card{
+  padding:clamp(112px,13vh,145px) clamp(34px,8vw,88px) 42px;
+}
+.date-page .date-card{
+  padding:clamp(100px,11vh,125px) clamp(30px,7vw,78px) 105px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg,#fffaf1 0%,#fcf5e9 65%,#f9efe1 100%);
+  border:1px solid #c9a66d;
+  box-shadow:0 0 0 7px rgba(255,249,239,.9),0 0 0 8px rgba(181,139,83,.48),0 12px 34px rgba(91,67,45,.1);
+  position:relative;
+  z-index:1;
+}
+.date-page .date-temple-arch{
+  position:absolute;
+  inset:12px 18px;
+  width:calc(100% - 36px);
+  height:calc(100% - 24px);
+  z-index:2;
+  pointer-events:none;
+}
+.date-page .date-floral{
+  position:absolute;
+  top:22px;
+  right:28px;
+  left:auto;
+  transform:scaleX(-1);
+  width:clamp(100px,16vw,150px);
+  opacity:.9;
+  z-index:3;
+}
+.date-page .date-card > *{
+  position:relative;
+  z-index:3;
+}
+
+/* Keep all five sections as equal viewport-height stops in the flowing page. */
+.moments-page{
+  min-height:100svh;
+}
+.blessing-page{
+  min-height:100svh;
+}
+@media(max-width:600px){
+  .invite-page,.date-page{padding:10px 12px}
+  .invite-card,.date-page .date-card{width:100%;min-height:calc(100svh - 20px)}
+  .invite-card{padding:105px 22px 28px}
+  .date-page .date-card{padding:100px 18px 90px}
+  .date-page .date-temple-arch{inset:10px 12px;width:calc(100% - 24px);height:calc(100% - 20px)}
+  .date-page .date-floral{width:96px;top:17px;right:16px}
+}

@@ -561,3 +561,193 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
     margin-top: 2px;
   }
 }
+
+
+/* MOBILE-ONLY FINAL PASS: retain iPad/desktop layout; make the two long pages compact. */
+@media (max-width: 600px) {
+  /* SAVE THE DATE: temple arch frames the complete compact card. */
+  .date-page {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 12px 10px 66px !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    overflow: hidden;
+  }
+  .date-page .date-temple-arch {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .date-page .date-card {
+    width: 100%;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 72px 18px 52px !important;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    overflow: visible;
+    justify-content: flex-start;
+  }
+  .date-page .date-card h2 {
+    margin: 0;
+    font-size: clamp(34px, 8.6vw, 42px);
+    line-height: 1.02;
+  }
+  .date-page .date-card h2:before {
+    content: none !important;
+    display: none !important;
+  }
+  .date-page .date-kicker {
+    display: block;
+    margin: 9px 0 8px;
+    color: #a9854d;
+    font: 600 11px/1.2 'Jost', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .date-page .weekday {
+    margin: 5px 0 8px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .date-page .date-divider {
+    margin: 5px auto;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .date-page .event-detail {
+    width: 100%;
+    max-width: 390px;
+    margin: 7px auto 5px;
+    padding: 9px 10px;
+    gap: 9px;
+    border: 1px solid rgba(181,139,83,.42);
+    border-radius: 7px;
+    background: rgba(255,250,242,.62);
+    text-align: left;
+  }
+  .date-page .detail-icon { font-size: 22px; }
+  .date-page .event-detail small {
+    font-size: 8px;
+    letter-spacing: 1.7px;
+  }
+  .date-page .event-detail strong {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .date-page .venue-qr {
+    margin: 6px auto 4px;
+    padding: 8px 8px 7px;
+    gap: 5px;
+    background: rgba(255,250,242,.56);
+    border: 1px solid rgba(181,139,83,.32);
+    border-radius: 7px;
+  }
+  .date-page .venue-qr p {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+  .date-page .venue-qr a {
+    padding: 4px;
+  }
+  .date-page .venue-qr img {
+    width: 82px;
+    height: 82px;
+  }
+  .date-page .countdown-title {
+    margin: 6px 0 5px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .date-page .countdown {
+    width: 100%;
+    max-width: 390px;
+    gap: 4px;
+    margin: 0 auto;
+  }
+  .date-page .countdown div {
+    min-width: 0;
+    padding: 6px 1px 5px;
+  }
+  .date-page .countdown strong {
+    font-size: 23px;
+    line-height: 1;
+  }
+  .date-page .countdown span {
+    font-size: 7px;
+    letter-spacing: .3px;
+  }
+  .date-page .scenic-lotus {
+    height: 58px;
+    bottom: 0;
+  }
+
+  /* CLOSING: no temple arch, no oversized fixed-height card or empty lower area. */
+  .blessing-page {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 20px 12px 24px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0;
+  }
+  .blessing-card {
+    width: 100%;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 28px 20px 10px !important;
+    overflow: visible;
+    border: 1px solid rgba(181,139,83,.62);
+    box-shadow: 0 0 0 4px rgba(255,249,240,.72), 0 0 0 5px rgba(181,139,83,.24);
+  }
+  .blessing-card:before { inset: 8px; }
+  .blessing-ornament { font-size: 23px; margin: 0 0 7px; }
+  .blessing-heading {
+    max-width: 100%;
+    font-size: clamp(27px, 7vw, 33px);
+    line-height: 1.13;
+  }
+  .blessing-card .ornament { margin: 9px auto 7px; }
+  .blessing-subtext { font-size: 17px; line-height: 1.2; }
+  .blessing-signature {
+    margin: 7px 0 5px;
+    font-size: clamp(38px, 9vw, 47px);
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  .joined-hands {
+    width: min(100%, 430px);
+    max-height: 165px;
+    height: auto;
+    margin: 3px auto 2px;
+  }
+  .blessing-lotus {
+    width: calc(100% + 18px);
+    height: 60px;
+    margin: 0 -9px -2px;
+  }
+  .closing-date { margin: 8px 0 0; }
+  footer { padding: 12px 8px; font-size: 7px; letter-spacing: 1.3px; }
+}
+
+
+/* Date heading: replace the old calendar glyph with the Save the Date label. */
+.date-card h2:before {
+  content: none !important;
+  display: none !important;
+}
+.date-card .date-kicker {
+  display: block;
+  margin: 10px 0 12px;
+  color: #a9854d;
+  font: 600 12px/1.2 'Jost', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

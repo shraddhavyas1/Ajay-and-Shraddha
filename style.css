@@ -321,3 +321,31 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
   .date-page .date-temple-arch{inset:10px 12px;width:calc(100% - 24px);height:calc(100% - 20px)}
   .date-page .date-floral{width:96px;top:17px;right:16px}
 }
+
+
+/* Photo page polish: subtle double gold page border, without a full temple arch. */
+.moments-page{
+  position:relative;
+  isolation:isolate;
+  padding:clamp(42px,7vh,68px) 28px 115px;
+}
+.moments-page::before,
+.moments-page::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+  border:1px solid rgba(181,139,83,.48);
+}
+.moments-page::before{inset:14px 16px 18px}
+.moments-page::after{inset:21px 23px 25px;border-color:rgba(181,139,83,.25)}
+.moments-inner{width:min(100%,720px);margin:0 auto;position:relative;z-index:2}
+.photo-grid{gap:clamp(12px,2vw,18px);max-width:620px}
+.photo-frame{box-shadow:0 5px 15px rgba(92,66,44,.10)}
+.gallery-lotus{z-index:2}
+@media(max-width:600px){
+  .moments-page{padding:38px 24px 105px}
+  .moments-page::before{inset:12px 10px 15px}
+  .moments-page::after{inset:18px 16px 22px}
+  .photo-grid{gap:10px}
+}

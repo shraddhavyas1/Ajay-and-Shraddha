@@ -43,3 +43,13 @@ Latest page-size and frame update:
 - Pages 2 (Engagement invitation) and 3 (Save the Date) have matching full-page proportions.
 - Both pages use the same gold temple-arch outline with side borders and curved upper arch; the Save the Date page retains its floral corner and lotus footer.
 - Existing fonts, photos, music, venue QR and wording are retained.
+
+Latest closing-page update:
+- The final blessings page now uses the same full-page gold temple arch with curved upper boundary and double side borders as the engagement and date pages.
+- The joined-hands artwork, lotus footer, fonts and wording remain unchanged.
+- The photo gallery remains photo-led with gold arch-shaped photo frames and its lotus footer.
+
+Latest Our Moments page refinement:
+- Kept the four original photos in the existing 2x2 gold arch frames.
+- Added a subtle double gold page border to tie the gallery into the invitation theme without crowding the photographs with a full temple arch.
+- Retained the lotus footer and existing fonts.

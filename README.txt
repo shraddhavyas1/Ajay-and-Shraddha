@@ -30,3 +30,10 @@ Template-matching update:
 - The Save the Date lotus footer was already present and is retained.
 - Replaced the closing tagline with "With warm regards, The Vyas & Sharma Families".
 - Existing photos, QR code, joined-hands image, monogram, font families and uploaded Krishna-theme song are retained.
+
+Latest layout update:
+- The invitation and Save the Date sections now use matching full-page sizing.
+- The invitation wording is larger while preserving the original font families.
+- Save the Date now uses the same gold temple arch and upper floral corner as the invitation page, with its lotus footer retained.
+- Removed the "The Vyas & Sharma Families" line from the closing page.
+- All other pages, original photographs, venue QR, venue details, monogram, joined-hands illustration and Krishna-theme song are retained.

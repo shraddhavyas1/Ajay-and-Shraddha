@@ -17,3 +17,9 @@ Venue QR:
 Small correction only: the initial A in Ajay is emphasized in the existing script font on the cover, invitation page, and closing signature. No other font families, sizes, layout, images, or styling have been changed.
 
 Display correction: Restored plain 'Ajay' text on the cover, invitation and closing signature. Existing script font and original font rules are retained. Upload every file at the ZIP root, including as-monogram.jpg, to ensure the monogram displays.
+
+Background music update:
+- The previous generated instrumental has been replaced with the user's uploaded Krishna-theme MP3.
+- File: engagement-theme.mp3
+- Playback begins when the visitor taps "Tap to Reveal" and loops continuously.
+- Upload engagement-theme.mp3 in the same root folder as index.html and style.css.

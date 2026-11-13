@@ -405,3 +405,159 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
 /* Opening-page AS monogram: enlarged by 25%, preserving its original artwork and proportions. */
 .monogram{width:clamp(181px,30vw,263px);height:clamp(206px,33.75vw,281px)}
 @media(max-width:600px){.monogram{width:185px;height:215px}}
+
+/* MOBILE FIT FIX — keep every element inside the Save the Date and closing temple frames.
+   Desktop styling and all approved typefaces/artwork remain unchanged. */
+@media (max-width: 600px) {
+  .date-page {
+    min-height: 0;
+    height: auto;
+    padding: 14px 12px;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .date-page .date-card {
+    width: 100%;
+    min-height: 980px;
+    height: auto;
+    padding: 116px 20px 104px;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .date-page .date-temple-arch {
+    inset: 10px 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 20px);
+  }
+  .date-page .date-floral {
+    width: 86px;
+    top: 16px;
+    right: 14px;
+  }
+  .date-page .date-kicker {
+    font-size: 49px;
+    line-height: 1.05;
+    margin-bottom: 7px;
+  }
+  .date-page .date-card h2 {
+    font-size: 38px;
+    line-height: 1.08;
+  }
+  .date-page .date-card h2:before {
+    font-size: 28px;
+    margin: 7px auto 9px;
+  }
+  .date-page .weekday {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 9px 0 10px;
+  }
+  .date-page .date-divider {
+    margin: 7px auto;
+  }
+  .date-page .event-detail {
+    width: 100%;
+    max-width: 100%;
+    padding: 9px 5px;
+    gap: 7px;
+    margin: 7px auto 4px;
+  }
+  .date-page .event-detail strong {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .date-page .venue-qr {
+    margin: 7px auto 5px;
+    gap: 4px;
+  }
+  .date-page .venue-qr p {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .date-page .venue-qr img {
+    width: 86px;
+  }
+  .date-page .venue-qr span {
+    font-size: 12px;
+  }
+  .date-page .countdown-title {
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin: 7px 0 7px;
+  }
+  .date-page .countdown {
+    width: 100%;
+    gap: 4px;
+  }
+  .date-page .countdown div {
+    min-width: 0;
+    padding: 7px 1px 6px;
+  }
+  .date-page .countdown strong {
+    font-size: 23px;
+  }
+  .date-page .countdown span {
+    font-size: 7px;
+    letter-spacing: .5px;
+  }
+  .date-page .scenic-lotus {
+    height: 72px;
+    bottom: 0;
+  }
+
+  .blessing-page {
+    min-height: 0;
+    height: auto;
+    padding: 18px 10px 24px;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .blessing-card {
+    width: 100%;
+    min-height: 920px;
+    height: auto;
+    padding: 128px 25px 24px;
+    overflow: hidden;
+  }
+  .blessing-card .blessing-temple-arch {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blessing-ornament {
+    margin: 0 0 12px;
+  }
+  .blessing-heading {
+    max-width: 100%;
+    font-size: clamp(27px, 7.2vw, 34px);
+    line-height: 1.16;
+  }
+  .blessing-card .ornament {
+    margin: 12px auto 10px;
+  }
+  .blessing-subtext {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .blessing-signature {
+    font-size: clamp(39px, 10vw, 48px);
+    line-height: 1.08;
+    margin: 9px 0 10px;
+    white-space: nowrap;
+  }
+  .joined-hands {
+    width: 100%;
+    max-height: 205px;
+    height: auto;
+    object-fit: contain;
+    margin: 8px auto 8px;
+  }
+  .blessing-lotus {
+    width: calc(100% + 18px);
+    height: 82px;
+    margin: 0 -9px;
+  }
+  .closing-date {
+    margin-top: 2px;
+  }
+}

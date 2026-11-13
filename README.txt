@@ -52,3 +52,9 @@ Latest closing-page update:
 Monogram update:
 - The first-page logo has been replaced with the newly created intertwined A and S monogram based on the reference image.
 - All other website files and design elements are retained from the latest temple-theme closing-page build.
+
+
+CLOSING PAGE FIX: The temple arch is now positioned as one single frame behind the closing message, warm regards, names, joined-hands artwork and lotus footer. The empty arch panel above the text has been removed.
+
+MOBILE DISPLAY UPDATE
+This build includes a mobile layout adjustment for the Save the Date and final blessing pages. The venue QR code, countdown, closing message, joined-hands illustration, and lotus footer are sized to remain within their respective decorative temple frames on narrow phone screens. The approved fonts, images, monogram, and other page designs are retained.

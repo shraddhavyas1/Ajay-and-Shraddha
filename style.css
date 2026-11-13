@@ -847,3 +847,40 @@ html{scroll-snap-type:none;scroll-behavior:smooth}
 @media (min-width: 601px) {
   .date-card .date-kicker { font-size: clamp(58px,7.5vw,78px); }
 }
+
+
+/* DATE PAGE REFINEMENT — keep the temple frame exactly as approved */
+.date-card .date-kicker {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #743d4b;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.date-card .date-kicker span { display: block; }
+@media (max-width: 600px) {
+  .date-page { padding-top: 10px !important; padding-bottom: 24px !important; }
+  .date-page .date-card {
+    padding: 98px 18px 20px !important;
+    justify-content: flex-start !important;
+  }
+  .date-page .date-card .date-kicker {
+    font-size: clamp(43px, 11.5vw, 53px);
+    line-height: .82;
+    margin: 0 0 17px;
+  }
+  .date-page .date-card .date-kicker span { margin-top: 1px; }
+  .date-page .date-card h2 {
+    font-size: clamp(32px, 8.2vw, 39px);
+    line-height: 1.08;
+    margin: 0 0 5px;
+  }
+  .date-page .weekday { margin: 7px 0 9px; }
+  .date-page .date-divider { margin: 7px auto; }
+  .date-page .event-detail { margin: 9px auto 6px; padding: 8px 9px; }
+  .date-page .venue-qr { margin: 8px auto 5px; padding: 7px 8px 6px; gap: 4px; }
+  .date-page .venue-qr img { width: min(148px, 42vw); height: auto; }
+  .date-page .countdown-title { margin: 9px 0 6px; }
+  .date-page .countdown { margin-bottom: 0; }
+}

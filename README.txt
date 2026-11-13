@@ -53,3 +53,9 @@ Latest Our Moments page refinement:
 - Kept the four original photos in the existing 2x2 gold arch frames.
 - Added a subtle double gold page border to tie the gallery into the invitation theme without crowding the photographs with a full temple arch.
 - Retained the lotus footer and existing fonts.
+
+Closing page correction:
+- The gold temple arch is now an absolute decorative frame behind the closing message.
+- “With blessings, we begin a beautiful journey”, warm regards, Shraddha & Ajay, joined-hands artwork and lotus footer sit inside the same framed page.
+- This corrects the prior layout where the arch appeared as an empty panel above the text.
+- The original AS monogram image asset, fonts, and couple photographs are retained without retouching.
